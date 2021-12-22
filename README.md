@@ -14,7 +14,7 @@ We wrote UnitTesting to implement the functions of the graph and the algorithms 
 **DiGraph**This class implement #GraphInterface interface:The interface has a road-system or communication network in mind and should support a large number of nodes (over 100,000).
 The GraphInterface class represents a Directional Weighted Graph,with effective representation.
 **implementaion:**
-We implemented the graph for the nodes and Edges we did using the data structure: dictionary
+We implemented the graph for the nodes and Edges we did using the data structure: dictionary.
 
 ## algorithems:
 

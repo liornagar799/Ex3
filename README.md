@@ -24,15 +24,15 @@ The functions we implement:
  1. void **init**(GraphInterface g)- initialize the graph on which this set of the algorithms.
  2. GraphInterface **getGraph**()- returns the graph of this class.  
  3. **shortestPath**-return the weight of the path, and list of shortest path between src to dest, , if there is no path we return float('inf'), []
- 4. **center**()-  Finds the NodeData with the shortest route to all other nodes.
+ 4. **center**()-  Finds the Node with the shortest route to all other nodes.
  5. **tsp**(List<int> node_lst)- return a list of consecutive nodes which go over all the nodes in cities.
  6. **save**(file)- saves this weighted (directed) graph to the given, the file is JSON format.
  7. **load**(file)- loads a graph to this graph algorithm, the file is JSON format.
- 8. **plot_graph**()- we implemented a graphical interface that Displays the graph.
+ 8. **plot_graph**()- implemented a graphical interface that Displays the graph.
  
 
  
  ## Performence
  We tested the program we built with several different sizes of graphs.
- And compare it to the performance versus the same work in java
- All comparisons can be found in the wiki file
+ And compare it to the performance versus the same work in java.
+ All comparisons can be found in the wiki file.

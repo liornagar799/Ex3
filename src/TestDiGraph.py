@@ -36,7 +36,6 @@ class TestDiGraph(TestCase):
         g.remove_node(0)
         self.assertEqual(4, g.e_size())
 
-
     def test_all_in_edges_of_node(self):
         lst = []
         g = self.new()
@@ -45,20 +44,17 @@ class TestDiGraph(TestCase):
             lst.append(i)
         self.assertEqual(l,lst)
 
-
     def test_add_edge(self):
         g = self.new()
         self.assertEqual(6, g.e_size())
         g.add_edge(0,3,5)
         self.assertEqual(7, g.e_size())
 
-
     def test_remove_node(self):
         g = self.new()
         v=g.v_size()
         g.remove_node(1)
         self.assertEqual(v-1, g.v_size())
-
 
     def test_remove_edge(self):
         g = self.new()

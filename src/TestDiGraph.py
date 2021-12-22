@@ -26,7 +26,7 @@ class TestDiGraph(TestCase):
 
     def test_v_size(self):
         g = self.new()
-        self.assertEqual(6, g.v_size())
+        self.assertEqual(5, g.v_size())
         g.remove_node(10)
         self.assertEqual(5, g.v_size())
 
@@ -34,13 +34,13 @@ class TestDiGraph(TestCase):
         g = self.new()
         self.assertEqual(6, g.e_size())
         g.remove_node(0)
-        self.assertEqual(3, g.e_size())
+        self.assertEqual(4, g.e_size())
 
 
     def test_all_in_edges_of_node(self):
         lst = []
         g = self.new()
-        l=[0,2]
+        l=[2]
         for i in g.all_in_edges_of_node(3).keys():
             lst.append(i)
         self.assertEqual(l,lst)
@@ -65,3 +65,4 @@ class TestDiGraph(TestCase):
         e=g.e_size()
         g.remove_edge(2,0)
         self.assertEqual(e-1, g.e_size())
+

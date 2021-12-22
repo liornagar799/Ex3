@@ -1,6 +1,5 @@
 from Node import NodeDataImpl
 
-
 class DiGraph:
     # constructor
     def __init__(self) -> None:
@@ -70,7 +69,6 @@ class DiGraph:
                 self._Edges[id1][id2] = weight
                 return True
         return False
-
 
 
    # Adds a node to the graph.

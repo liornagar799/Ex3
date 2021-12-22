@@ -9,7 +9,6 @@ from DiGraph import DiGraph
 
 
 class GraphAlgo:
-
     # constructor
     def __init__(self, g: GraphInterface = DiGraph()) -> None:
         self._graph = g

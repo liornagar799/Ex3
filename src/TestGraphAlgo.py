@@ -34,12 +34,26 @@ class TestGraphAlgo(unittest.TestCase):
         self.assertEqual(l, lst)
 
     def test_tsp(self):
-            graph2 = DiGraph()
-            targets = [0, 1, 2]
-            b = GraphAlgo(graph2)
-            expected = [0,1,2];
-            print(b.TSP(targets)[1])
-            self.assertEqual(b.TSP(targets)[0], expected)
+        graph2 = DiGraph()
+        graph2.add_node(0)
+        graph2.add_node(1)
+        graph2.add_node(2)
+        graph2.add_node(3)
+        graph2.add_edge(0, 3, 5)
+        graph2.add_edge(0, 2, 8)
+        graph2.add_edge(1, 2, 5)
+        graph2.add_edge(1, 3, 7)
+        graph2.add_edge(1, 0, 1)
+        graph2.add_edge(2, 0, 4)
+        graph2.add_edge(2, 3, 1)
+        graph2.add_edge(2, 1, 100)
+        graph2.add_edge(3, 0, 100)
+        graph2.add_edge(3, 2, 3)
+        targets = [0, 1, 2]
+        b = GraphAlgo(graph2)
+        expected = [0,2, 1, 2];
+        print(b.TSP(targets)[1])
+        self.assertEqual(b.TSP(targets)[0], expected)
 
 
     def test_center_load(self):

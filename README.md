@@ -9,7 +9,7 @@ We wrote UnitTesting to implement the functions of the graph and the algorithms 
 
 ## Planning of the main departments:
 
-**Node**  This class implement NodeData interface, represents the set of operations applicable on a node in a weighted graph.
+**Node** represents the set of operations applicable on a node in a weighted graph.
 
 **DiGraph**This class implement #GraphInterface interface:The interface has a road-system or communication network in mind and should support a large number of nodes (over 100,000).
 The GraphInterface class represents a Directional Weighted Graph,with effective representation.

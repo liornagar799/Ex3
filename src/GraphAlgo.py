@@ -145,13 +145,14 @@ class GraphAlgo:
             Path.append(self._graph.get_all_v()[id1])
             return Path , 0
 
+        w=0
         #Go over any pair of nodes
         for i in range(0,len(node_lst)-1):
             id1 = node_lst[i]
             id2 = node_lst[i+1]
             cnt = self.shortest_path(id1,id2)[1]
             #the ans weigth
-            w = self.shortest_path(id1,id2)[0]
+            w += self.shortest_path(id1,id2)[0]
             if i>0:
                 cnt.remove(cnt[0])
             Path.extend(cnt)

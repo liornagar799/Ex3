@@ -3,12 +3,12 @@ from Node import NodeDataImpl
 
 class DiGraph:
     # constructor
-    def __init__(self, Nodes: dict = {}, Edges: dict = {}, MC: int = 0) -> None:
-        self._Nodes = Nodes
-        self._Edges = Edges
+    def __init__(self) -> None:
+        self._Nodes = {}
+        self._Edges = {}
         self._Node_Size = len(self._Nodes)
         self._Edge_Size =len(self._Edges)
-        self._MC = MC
+        self._MC = 0
 
     # Convert DiGraph to STR
     def __str__(self) -> str:

@@ -5,7 +5,7 @@ The project is actually the design and implementation of directed and weighted g
 First, we had to design and implement four interfaces that were designed to produce a directed graph: class for nodes and class for graph.
 Second, we implemented an interface of the algorithms of the graph, the breakdown of the function names and explanations will appear below.
 Next, we implemented a graphical interface that Displays the graph
-We wrote UnitTesting to implement the functions of the graph and the algorithms of the graph, which are designed to test their correctness and performance..
+We wrote UnitTesting to implement the functions of the graph and the algorithms of the graph, which are designed to test their correctness and performance.
 
 ## Planning of the main departments:
 

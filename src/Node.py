@@ -1,6 +1,6 @@
 import math
-class NodeDataImpl:
 
+class NodeDataImpl:
     #constructor
     def __init__(self, _key: int = -1, _Location: tuple = None) -> None:
         self._key = _key

@@ -55,7 +55,6 @@ class TestGraphAlgo(unittest.TestCase):
         print(b.TSP(targets)[1])
         self.assertEqual(b.TSP(targets)[0], expected)
 
-
     def test_center_load(self):
         g = DiGraph()
         a = GraphAlgo(g)

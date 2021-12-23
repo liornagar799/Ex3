@@ -1,5 +1,6 @@
 from Node import NodeDataImpl
 
+
 class DiGraph:
     # constructor
     def __init__(self) -> None:
@@ -71,6 +72,7 @@ class DiGraph:
         return False
 
 
+
    # Adds a node to the graph.
     def add_node(self, node_id: int, pos: tuple = None) -> bool:
         if node_id not in self._Nodes:
@@ -83,9 +85,7 @@ class DiGraph:
             self._Node_Size += 1
             return True
         #If the node does exist
-        else:
-         self.get_all_v()[node_id].setLocation(pos)
-         return True
+        return False
 
     # Removes a node from the graph.
     def remove_node(self, node_id: int) -> bool:

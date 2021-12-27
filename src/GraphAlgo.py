@@ -170,6 +170,8 @@ class GraphAlgo:
             for j in range(0, self._graph.v_size()):
                 # for node i we calculate all the paths to the other nodes
                 w = self.shortest_path(i, j)[0]
+                if (w==float('inf')):
+                    return   None, math.inf
                 # Keeps the longest path
                 if current < w:
                     current = w
